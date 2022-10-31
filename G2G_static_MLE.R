@@ -24,7 +24,7 @@ lam <- rgamma(N,shape=shape,rate=rate)
 #create individual p with covariates 
 p = 1 - exp(-lam*exp(x1*b1+x2*b2))
 
-#simulated from shifted geometric distribution for each p
+#simulate from shifted geometric distribution for each p
 y <- rgeom(N, p) + 1
 
 #create a censoring point since real application can have censoring
