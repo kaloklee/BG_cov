@@ -13,6 +13,7 @@ G2G_static_MLE.R is a simpler version with static covariates.  I first created i
 Please contact me (kaloklee@gmail.com) if you have any questions or comments.  
 
 Some reference for the (shifted) Beta-Geometric Distribution:
+
 Fader, Peter S. and Bruce G.S. Hardie (2007), "How to Project Customer Retention," Journal of Interactive Marketing, 31 (1), 76-90.
 
 Lee, Ka Lok, Peter S. Fader, and Bruce G.S. Hardie (2007), “How to Project Patient Persistency,” Foresight: The International Journal of Applied Forecasting, Issue 8, 31-35. 
