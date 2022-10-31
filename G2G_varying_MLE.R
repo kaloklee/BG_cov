@@ -139,7 +139,13 @@ G2G <- function(par,y,X,id) {
     index_t = which(cen==t);
     
     if (length(index_t) > 0) {
-        LL_cen= LL_cen + sum (-r*log(1+rowSums(C_c[index_t,1:t]/alpha) ));
+      
+        if (t == 1) {
+          LL_cen = LL_cen + sum ( -r*log(1+(C_c[index_t,1]/alpha) ));
+        }
+        else { 
+          LL_cen= LL_cen + sum (-r*log(1+rowSums(C_c[index_t,1:t]/alpha) )); 
+        }
     }
   }  
   
