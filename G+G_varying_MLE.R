@@ -65,11 +65,9 @@ G2G <- function(par,y,X,id) {
   #uncen 
   uncen=y[-id];
   X_uncen=X[-id, , ];
-#  print(length(uncen))
-#  print(dim(X[-id, , ]))
   LL_uncen = 0;
   C_u=matrix(0,nrow=length(uncen),ncol=max(uncen));
-#  print(dim(C_u))
+
   for (t in 1:max(uncen)) {
 
     C_u[, t] = exp( X_uncen[,t,] %*% coeff );
